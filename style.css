@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
+
+body {
+    font-family: 'Delius', serif;
+    background-image: linear-gradient(#ffffff, #75c6ff);
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    font-family: 'Delius', serif;
+    background-color: #75c6ff;
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+li {
+    float: right;
+}
+
+button {
+    font-family: 'Delius', serif;
+    width: 100px;
+    height: 30px;
+}
+
+#digitalcookie {
+    width: 400px;
+    align-items: center;
+    hover
+}
+
+
+
+#ordernow {
+    margin: 50px;
+    padding: 75px;
+    background-color: #ffffff;
+    float: center;
+}
+
+#aboutme {
+    margin: 50px;
+    padding: 75px;
+    background-color: #ffffff;
+}
