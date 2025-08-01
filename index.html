@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
     <head>
+         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Off Course: Cookies</title>
         <link rel="stylesheet" href="style.css">
+
     </head>
 
-    <body>
-        
+    <body> 
         <div id="navbar">
-                <ul>
+                <nav>
                     <li style="float:left"><p>Off course cookies</p></li>
-                    <li><button>order now!</button></li>
-                    <li><button>gallery</button></li>
-                    <li><button>about me</button></li>
-                </ul>  
+                    <li><button onclick ="location.href = '#order'">order now!</a></li>
+                    <li><button onclick = "location.href ='#gallery'">gallery</a></li>
+                    <li><button onclick = "location.href = '#aboutme'">about me</a></li>
+                </nav>
+
         </div>
 
         <div id="cookie">
@@ -23,8 +26,8 @@
         </div>
 
         <div id="aboutme">
-            <div> photo here</div>
-            <div> bio here</div>
+            <img id ="selena" src="assets/selena.jpg">
+            <p1>I've been making cookies for about 3 years and I've learned about. From testing different recipes and techniques, I think I finally have the confidence to go live! </p1>
         </div>
 <!--I think I want to put a slider here with reviews-->
         <div id="gallery">
@@ -36,6 +39,12 @@
 
         <div id="order">
             <form>
+                <label for="firstname">First name:</label><br>
+                <input type="text" id="firstname"><br>
+                <label for="lastname">Last name:</label><br>
+                <input type="text" id="lastname">
+                <input type="submit" value="send!">
+
             </form>
         </div>
 

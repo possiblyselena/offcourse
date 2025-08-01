@@ -3,6 +3,7 @@
 body {
     font-family: 'Delius', serif;
     background-image: linear-gradient(#ffffff, #75c6ff);
+    text-align: center;
 }
 
 p {
@@ -12,11 +13,14 @@ p {
 
 #navbar {
     font-family: 'Delius', serif;
-    background-color: #75c6ff;
-    padding: 10px;
+    background-color: #75c6ff; 
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
 }
 
-ul {
+nav {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -32,23 +36,63 @@ button {
     height: 30px;
 }
 
-#digitalcookie {
-    width: 400px;
-    align-items: center;
-    hover
+p1 {
+    font-size: 35px;
 }
 
+#digitalcookie {
+    display: flex;
+    padding-top: 2em;
+    margin: auto;
+    width: 500px;
+}
 
+#digitalcookie:hover {
+    animation: glowing alternate infinite 0.6s;
+}
 
 #ordernow {
-    margin: 50px;
-    padding: 75px;
+    display: flex;
+    margin: auto;
     background-color: #ffffff;
     float: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 #aboutme {
     margin: 50px;
     padding: 75px;
     background-color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;    
+}
+
+#selena {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+#gallery {
+    margin: 50px;
+    
+    background-color: #ffffff;
+}
+
+#order {
+    padding: 75px;
+    margin: 50px;
+    background-color:  #b0deffff;
+}
+
+@keyframes glowing {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.85);
+    }
 }
