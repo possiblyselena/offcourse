@@ -78,9 +78,18 @@ p1 {
 
 #gallery {
     margin: 50px;
-    
     background-color: #ffffff;
 }
+
+#review {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.review {
+    display: none;
+}
+
 
 #order {
     padding: 75px;
