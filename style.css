@@ -18,13 +18,12 @@ p {
     position: fixed;
     overflow: hidden;
     top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 nav {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
 }
 li {
     float: right;
@@ -34,6 +33,7 @@ button {
     font-family: 'Delius', serif;
     width: 100px;
     height: 30px;
+    background-color: #ffffff;
 }
 
 p1 {
@@ -76,20 +76,42 @@ p1 {
     object-fit: cover;
 }
 
-#gallery {
-    margin: 50px;
-    background-color: #ffffff;
+.menu {
+    position: relative;
+    max width: 1200px;
+    margin: 0 auto;
 }
 
-#review {
+.slideshow-container {
+    max-width: 1000px;
+  position: relative;
+  margin: auto;
+  background-color: #ffffff;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  justify-content: center;
+  z-index: 0;
+}
+
+#aneek {
+    display: block;
+}
+
+.row {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
 }
 
-.review {
-    display: none;
+.people {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
 }
-
 
 #order {
     padding: 75px;
